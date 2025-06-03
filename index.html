@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-cloud-sun"></i> Weather Dashboard</h1>
+                 <a href="https://github.com/codeWithIbu/student-registration-system-up-" target="_blank" rel="noopener noreferrer">
+  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+       alt="GitHub" 
+       width="32" 
+       height="32">
+        </header>
+
+        <div class="search-section">
+            <h2>Enter a City Name</h2>
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="E.g., New York, London, Tokyo">
+                <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+            <div class="divider">Or</div>
+            <button id="location-btn"><i class="fas fa-location-arrow"></i> Use Current Location</button>
+        </div>
+
+        <div class="weather-display">
+            <div class="current-weather">
+                <h2 id="current-city">London (04-06-2025)</h2>
+                <div class="weather-info">
+                    <p><i class="fas fa-temperature-high"></i> <span id="current-temp">7.06</span>°C</p>
+                    <p><i class="fas fa-wind"></i> <span id="current-wind">2.85</span> M/S</p>
+                    <p><i class="fas fa-tint"></i> <span id="current-humidity">88</span>%</p>
+                </div>
+            </div>
+
+            <div class="weather-condition">
+                <h3 id="weather-desc">Light Rain</h3>
+                <div class="condition-details">
+                    <p><i class="fas fa-temperature-low"></i> <span id="feels-like">8.46</span>°C</p>
+                    <p><i class="fas fa-wind"></i> <span id="wind-speed">4.23</span> M/S</p>
+                    <p><i class="fas fa-tint"></i> <span id="humidity">94</span>%</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="forecast-section">
+            <h3>5-Day Forecast</h3>
+            <div class="forecast-container" id="forecast-container">
+                <!-- Forecast items will be added dynamically -->
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
